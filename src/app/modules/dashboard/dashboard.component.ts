@@ -8,13 +8,13 @@ import { DashboardService } from '../dashboard.service';
 })
 export class DashboardComponent implements OnInit {
 
-  //bigChart = [];
-  //cards : any = [];
- // pie : any = [];
+  bigChart = [];
+  cards = [];
+ pie = [];
 
-  bigChart: { name: string; data: number[] }[] = [];
-   cards: number[] = [];
-   pie: ({ name: string; y: number; sliced: boolean; selected: boolean; } | { name: string; y: number; sliced?: undefined; selected?: undefined; })[] = [];
+  // bigChart: { name: string; data: number[] }[] = [];
+  //  cards: number[] = [];
+  //  pie: ({ name: string; y: number; sliced: boolean; selected: boolean; } | { name: string; y: number; sliced?: undefined; selected?: undefined; })[] = [];
   
   constructor(private dashboardService: DashboardService) { }
 
