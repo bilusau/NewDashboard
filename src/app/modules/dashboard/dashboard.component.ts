@@ -10,7 +10,7 @@ export class DashboardComponent implements OnInit {
 
   bigChart = [];
   cards = [];
- pie = [];
+  pie = [];
 
   // bigChart: { name: string; data: number[] }[] = [];
   //  cards: number[] = [];
