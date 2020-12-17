@@ -8,9 +8,14 @@ import { DashboardService } from '../dashboard.service';
 })
 export class DashboardComponent implements OnInit {
 
-  bigChart = [];
-  cards = [];
-  pie = [];
+  //bigChart = [];
+  //cards : any = [];
+ // pie : any = [];
+
+  bigChart: { name: string; data: number[] }[] = [];
+   cards: number[] = [];
+   pie: ({ name: string; y: number; sliced: boolean; selected: boolean; } | { name: string; y: number; sliced?: undefined; selected?: undefined; })[] = [];
+  
   constructor(private dashboardService: DashboardService) { }
 
   ngOnInit() {
