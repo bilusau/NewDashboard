@@ -1,0 +1,37 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <button mat-icon-button (click)="toggleSideBar()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span>APP LOGO</span>
+        <div fxFlex fxlayout="row" fxLayoutAlign="flex-end">
+            <ul fxLayout="row" fxLayoutGap="20px">
+                <li>
+                    <button matc-icon-button>
+                        <mat-icon>settings</mat-icon>
+                    </button>
+                </li>
+                <li>
+                    <button matc-icon-button>
+                        <mat-icon>help</mat-icon>
+                    </button>
+                </li>
+                <li>
+                    <button mat-button [matMenuTriggerFor]="menu">
+                        <mat-icon>person_outline</mat-icon>
+                    </button>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item>
+                            <mat-icon>exit_to_app</mat-icon>
+                            Sign Out
+                        </button>
+                    </mat-menu>
+                </li>
+            </ul>
+        </div>
+        <!-- <span>Third Line</span>
+        <span class="example-spacer"></span>
+        <mat-icon class="example-icon" aria-hidden="false" aria-label="Example heart icon">favorite</mat-icon>
+        <mat-icon class="example-icon" aria-hidden="false" aria-label="Example delete icon">delete</mat-icon> -->
+    </mat-toolbar-row>
+  </mat-toolbar>
